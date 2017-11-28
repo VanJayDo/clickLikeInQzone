@@ -1,6 +1,6 @@
 ##   clickLikeInQzone
 脚本依托于 [selenium](https://github.com/SeleniumHQ/selenium)模块，调用[phantomjs](https://github.com/ariya/phantomjs)实现功能。兼容python2和3。<br>
-需要手动改写脚本中ACCOUNT，PASSWORD，myAccount，myNickName等变量。
+请根据自己的情况修改map VALS中的各个变量。
 
 在运行时打印的日志中，
 
@@ -15,7 +15,9 @@ Just clicked the-> URL <-
 #### **更新日志：**
 
 ```markdown
-Version 1.2.1 修复了部分bug（程序跑飞，phantomjs会占用服务器过多资源等），通过目前所有的测试，较稳定。
+Version 1.3 使用字符串模板对变量统一设置。
+
+Version 1.2 修复了部分bug（程序跑飞，phantomjs会占用服务器过多资源等），通过目前所有的测试，较稳定。
 
 Version 1.1 新增对于在评论里@本人的说说进行自动回复的功能。
 
