@@ -126,7 +126,7 @@ if __name__=="__main__":
 	newZAN=zanTemp.substitute(VALS)
 	replyTemp =string.Template(REPLY)
 	newREPLY=replyTemp.substitute(VALS)
-	couter=0
+	# counter=0
 	while 1:
 		try:
 			driver.find_element_by_id('feed_tab_hover')
@@ -135,8 +135,8 @@ if __name__=="__main__":
 		else:
 			driver.execute_script(newZAN)
 			driver.execute_script(newREPLY)
-			#driver.save_screenshot("screenshot"+str(couter)+".png")#每次执行自动点赞和回复后进行截图，有需要的取消注释
-			#couter++
+			#driver.save_screenshot("screenshot"+str(counter)+".png")#每次执行自动点赞和回复后进行截图，有需要的取消注释
+			#counter++
 			log=driver.get_log("browser")
 			for i in log:
 				if (i["message"].find("clicked")!=-1):
